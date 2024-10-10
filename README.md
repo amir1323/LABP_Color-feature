@@ -8,3 +8,17 @@ This repository presents an innovative approach for image retrieval and pattern 
 In addition, the algorithm incorporates the **Extended Canberra Distance** for comparing feature vectors, improving the precision of image retrieval.
 
 The effectiveness of this method has been validated on benchmark datasets, including **Wang (Corel-1k)** and **Corel-10k**, demonstrating superior precision in comparison with other existing methods.
+
+## 1K images
+![1K](images/1K/293.jpg)
+![1K](images/1K/302.jpg)
+![1K](images/1K/422.jpg)
+![1K](images/1K/554.jpg)
+![1K](images/1K/630.jpg)
+
+## 10K images
+![10K](images/10k/246.jpg)
+![10K](images/10k/3827.jpg)
+![10K](images/10k/58.jpg)
+![10K](images/10k/635.jpg)
+![10K](images/10k/883.jpg)
