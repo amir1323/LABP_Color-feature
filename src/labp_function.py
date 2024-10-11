@@ -2,9 +2,9 @@
 import numpy as np
 from bilinear_interpolation import bilinear_interpolation
 
-def circ_classical_lbp(img, y, x, r, p):
+def circ_classical_labp(img, y, x, r, p):
     """
-    Compute the circular classical Local Binary Pattern (LBP).
+    Compute the circular classical Local Avrage Binary Pattern (LABP).
     
     Parameters:
         img (numpy array): Input grayscale image.
@@ -14,7 +14,7 @@ def circ_classical_lbp(img, y, x, r, p):
         p (int): Number of neighbors.
         
     Returns:
-        int: LBP value for the central pixel.
+        int: LABP value for the central pixel.
     """
     binary_color = 0
     center = img[y, x]
