@@ -2,8 +2,16 @@ import cv2
 import numpy as np
 
 def make_hist(img,bins):#this is the fanction that create bin color
-    #img is the image
-    #bins -> is the number of bins if bins equal to 4 it will be 4*4*4
+    """
+    Create a 3D color histogram from an image.
+    
+    Parameters:
+    img (numpy array): Image in BGR format.
+    bins (int): Number of bins per color channel.
+    
+    Returns:
+    numpy array: Flattened histogram of the image.
+    """
     histogram = np.zeros((bins,bins,bins),dtype='int32')#create bin * bin * bin histogram
     div = 256 // bins
     h,w,C = img.shape#extract each channel
@@ -16,7 +24,17 @@ def make_hist(img,bins):#this is the fanction that create bin color
             histogram[BGR[0],BGR[1],BGR[2]] += 1
 
     return histogram
-
+ """
+    Process multiple images and extract color histograms.
+    
+    Parameters:
+    dataset_path (str): Path to the image dataset directory.
+    bins (int): Number of bins for color quantization.
+    num_images (int): Number of images to process.
+    
+    Returns:
+    numpy array: Feature vectors for all images.
+    """
 bins = 8
 path = "Location"#location of dataset directory
 total_hist = np.zeros((10000,bins**3))#sets a matrix of features
