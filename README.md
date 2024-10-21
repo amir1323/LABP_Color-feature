@@ -59,7 +59,11 @@ pip install -r requirements.txt
 ```
 ### 2. make sure you have the datasets
 for diownloading dataset please use this link (Google Drive):
+
+
 https://drive.google.com/file/d/1XFZvSFNu7W8J8JBSDXZnf3PrWIp-N8mo/view?usp=sharing (Corel 1k)
+
+
 https://drive.google.com/file/d/1zjbT7LVJ0V4CWgK7vY8buc3rLt8MK1Dh/view?usp=sharing (Corel 10k)
 
 
